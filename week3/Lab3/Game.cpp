@@ -79,4 +79,9 @@ void Game::getInfo() {
     cout << "How many sides would you like, player 2?" << endl;
     cin >> p2Sides;
 }
+ 
+void Game::getRolls() {
 
+
+
+}
