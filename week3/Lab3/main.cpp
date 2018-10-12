@@ -21,8 +21,7 @@ int main () {
     if (!game.beginMenu()) {
         return 0;
     }
-    game.getInfo();
-
-    std::cout << "Didn't run if it works right." << std::endl;
+    game.getRolls();
+    game.gameLoop();
     return 0;
 }
