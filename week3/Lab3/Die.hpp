@@ -12,6 +12,7 @@ protected:
 
 
 public:
+    // constructor that takes an int argument
     Die(int);
 
 

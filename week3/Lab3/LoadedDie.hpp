@@ -10,8 +10,9 @@
 class LoadedDie: public Die {
 
 public: 
-    // overriding the roll function from the Die class.
     LoadedDie(int);
+    
+    // overriding the roll function from the Die class.
     int roll();
 
 

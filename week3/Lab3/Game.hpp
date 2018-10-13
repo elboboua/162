@@ -4,6 +4,9 @@
 
 #include "Die.hpp"
 #include "LoadedDie.hpp"
+#include "inputValidation.hpp"
+#include <string>
+
 
 class Game {
 
@@ -20,9 +23,13 @@ private:
 
 public:
     Game();
+
     bool beginMenu();
+
     void getInfo();
     void getRolls();
+
     void gameLoop();
-    //~Game();
+
+    ~Game();
 };

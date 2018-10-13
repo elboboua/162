@@ -5,6 +5,7 @@
 #include "LoadedDie.hpp"
 #include <cstdlib>
 
+// The loaded Die class constructor
 LoadedDie::LoadedDie (int sides) : Die(sides) {     
 
 

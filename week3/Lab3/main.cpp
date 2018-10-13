@@ -9,19 +9,20 @@
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
-
-//#include "Die.hpp"
-//#include "LoadedDie.hpp"
 #include "Game.hpp"
 
+// main function for the program. 
 int main () {
+    // Sets the seed for our randomizer
+    srand(time(NULL));
 
-
+    // creates game object
     Game game;
     if (!game.beginMenu()) {
         return 0;
     }
-    game.getRolls();
+    // displays the rolls and winner
     game.gameLoop();
+
     return 0;
 }

@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include "Die.hpp"
 
-
+// The constructor definition
 Die::Die(int sides) {
 
     this->sides = sides;
