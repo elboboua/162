@@ -5,17 +5,31 @@
 *********************************************************************/
 
 
-#include "Tiger.hpp"
-#include "Turtle.hpp"
-#include "Penguin.hpp"
+#include "Zoo.hpp"
 
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 int main () {
 
+srand(time(NULL));
 
-Tiger tiger;
-Turtle turtle;
-Penguin penguin;
+	Zoo zoo;
+	zoo.addTiger();
+	zoo.addTurtle();
+	zoo.addPenguin();
 
-}
+	zoo.ageAnimals();
+	zoo.ageAnimals();
+	zoo.ageAnimals();
+	zoo.ageAnimals();
+	zoo.ageAnimals();
+
+	zoo.randomEvent();
+
+	return 0;
+ 
+}               
+
+ 

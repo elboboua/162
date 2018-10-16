@@ -26,7 +26,7 @@ public:
 
     // This is the only set variable needed.
     void growAnimal();
-   
+	void createBaby();   
 	bool isAdult(); 
 };
 

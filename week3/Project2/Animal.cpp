@@ -47,12 +47,20 @@ int Animal::getPayOff() {
 
 }
 
-// This is the only set variable needed.
 void Animal::growAnimal() {
 
     this->age++;
 
 }
+
+void Animal::createBaby() {
+
+	age = 0;
+
+}
+
+
+
 
 bool Animal::isAdult() {
 
