@@ -47,21 +47,23 @@ int Animal::getPayOff() {
 
 }
 
+
+// increases the animals age by 1
 void Animal::growAnimal() {
 
     this->age++;
 
 }
 
-void Animal::createBaby() {
+void Animal::setAge(int age) {
 
-	age = 0;
+	this->age = age;
 
 }
 
 
 
-
+// returns true if the age is >= 3 and false otherwise
 bool Animal::isAdult() {
 
 	if (age >= 3) {

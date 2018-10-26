@@ -24,9 +24,12 @@ public:
     int getBaseFoodCost();
     int getPayOff();
 
-    // This is the only set variable needed.
-    void growAnimal();
-	void createBaby();   
+    // increases the animals age by 1 
+	void growAnimal();
+
+	void setAge(int); 
+
+	// returns true if the age is >= 3  
 	bool isAdult(); 
 };
 

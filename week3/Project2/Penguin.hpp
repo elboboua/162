@@ -7,6 +7,8 @@
 
 #include "Animal.hpp"
 
+
+// The penguin class inherits from the animal base class
 class Penguin: public Animal {
 
 

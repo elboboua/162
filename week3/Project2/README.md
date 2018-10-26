@@ -50,10 +50,51 @@ Methods
 	1. beginGame method
 	2. initial buying animals method
 	3. gameLoop - no user input is required 
-	4. randomEvent
+	4. randomEvent *DONE*
+		Need to get randomAnimal and give baby,
+			if no adults, go to other animal, if no animals have adults, recover
+			do while nobabies and tried all true.
+			while ( nobabies && !(triedTigers&&triedTurtles&&triedPenguins)) 
+			all vars start as false
 	5. feedFunction (also subtracts money)
 	6. addAnimal - needs to be able to dynamically grow the pointer array
 
 #To - do:
+randomFunction *DONE*
 make sure you copy the age when the array grows. 
+deallocate the pointers
 
+
+
+*make beginning function*
+	display game title
+	play?
+	display money
+	ask them to buy animals
+		show price for each animal bought 
+			modify addAnimal function
+
+	
+
+*make loop function*
+	a.feed animals
+
+	b.randomFunction
+	display payOff made
+	display animal numbers
+	display budget
+	offer to buy adult animals
+		would you like buy an animal bool
+		How many tigers would you like to buy - enter 0 for none
+			check if users has enough money, if not, loop with has enough money variable
+			repeat for each animal
+
+
+
+		modify addAnimal function
+
+	keep playing?
+	no money, end game - if budget < 0 return 0;
+
+
+make a destructor that deletes the dynamic arrays.

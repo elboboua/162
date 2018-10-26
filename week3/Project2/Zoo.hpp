@@ -13,15 +13,17 @@ class Zoo {
 
 private:
 
-	// variables necessary to keep track of animals
-	Tiger *tigers;
-	Turtle *turtles;
-	Penguin *penguins;
-
+	// pointers to the base class. 
+	Animal *tigers;
+	Animal *turtles;
+	Animal *penguins;
+	
+	// variables to keep track of the size of the animals
 	int sizeofTigers;
 	int sizeofTurtles;
 	int sizeofPenguins;
 	
+	// the number of animals in the zoo by type
 	int numOfTigers;
 	int numOfTurtles;
 	int numOfPenguins;
@@ -33,12 +35,15 @@ private:
 public:
 	Zoo();
 
+	// returns budget
 	int getBudget();
 
 	// adds a new animal type to the array
-	void addTiger(bool = false);
-	void addTurtle(bool = false);
-	void addPenguin(bool = false);
+	// The first bool is true if the animal is a baby at age 0, false if not
+	// The second bool is true if the animal is an adult, false if not. 
+	void addTiger(bool = false, bool = false);
+	void addTurtle(bool = false, bool = false);
+	void addPenguin(bool = false, bool = false);
 
 
 	// ages the animals by a day
@@ -51,8 +56,16 @@ public:
 	void randomEvent();
 	// this function is inside the random birth functioni
 	bool anyAdults();
-	bool randomBirth(int randInt, bool&);
+
+	// functions that introduce and display the rounds of the game
+	bool beginGame();
+	void loopGame();
+	void makePurchase(int);
+	void depositPayoff();
+	void displayAnimals();
+
+	// destructor
+	~Zoo();
 };
 
 #endif // ZOO_H
-

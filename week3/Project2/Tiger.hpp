@@ -7,6 +7,8 @@
 
 #include "Animal.hpp"
 
+
+// The tiger class inherits from the animal base class.
 class Tiger: public Animal {
 
 

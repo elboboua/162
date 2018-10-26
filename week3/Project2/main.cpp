@@ -13,23 +13,23 @@
 
 int main () {
 
-srand(time(NULL));
+	// used to create random ints in other parts of the program.
+	srand(time(NULL));
 
+	// create a zoo object.
 	Zoo zoo;
-	zoo.addTiger();
-	zoo.addTurtle();
-	zoo.addPenguin();
+	
+	// begin the game
+	if (!zoo.beginGame()) {
 
-	zoo.ageAnimals();
-	zoo.ageAnimals();
-	zoo.ageAnimals();
-	zoo.ageAnimals();
-	zoo.ageAnimals();
+		return 0;
 
-	zoo.randomEvent();
+	}
 
-	return 0;
- 
+	// loop until user desires to quick
+	zoo.loopGame();
+
+	return 0; 
 }               
 
  

@@ -7,6 +7,8 @@
 
 #include "Animal.hpp"
 
+
+// The turtle class inherits from the animal base class.
 class Turtle: public Animal {
 
 
