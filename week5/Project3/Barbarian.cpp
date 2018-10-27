@@ -4,7 +4,7 @@
 
 #include "Barbarian.hpp"
 
-Barbarian::Barbarian() : Character(12,0) {
+Barbarian::Barbarian() : Character(12,0, "Barbarian") {
 };
 
 
