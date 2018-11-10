@@ -8,6 +8,7 @@
 Medusa::Medusa() : Character (8, 3, "Medusa") {
 };
 
+// This function includes Medusa's special ability, glare, which instantly kills the opponent
 int Medusa::attack() {
 	int total;
 
@@ -26,6 +27,7 @@ int Medusa::attack() {
 	}
 }
 
+// redefined for Medusa's damage rolls
 int Medusa::defense(int damage) {
 	int roll = 1+rand()%6;
 

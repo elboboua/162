@@ -7,6 +7,8 @@
 Vampire::Vampire(): Character(18, 1, "Vampire") {
 }
 
+
+// redefines the attack for the vamp character
 int Vampire::attack() {
 	
 	int roll = 1+rand()%12;
@@ -15,6 +17,7 @@ int Vampire::attack() {
 
 } 
 
+// This function incorporates the vamp's special ability - charm
 int Vampire::defense(int damage) {
 
 	int chance= rand()%2;

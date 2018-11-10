@@ -12,8 +12,10 @@
 
 int main() {
 
+	// creates a menu object
 	Menu menu;
 
+	// loops the object
 	menu.loop();
 
 

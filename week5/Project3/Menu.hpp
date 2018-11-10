@@ -10,6 +10,7 @@
 #include "Medusa.hpp"
 #include "HarryPotter.hpp"
 #include "inputValidation.hpp"
+
 class Menu {
 
 private:

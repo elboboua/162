@@ -10,6 +10,7 @@ HarryPotter::HarryPotter() : Character(10,0, "Harry Potter") {
 }
 
 
+// This function takes revives Harry if he has died once.
 void HarryPotter::takeDamage(int damage) {
 
 	Character::takeDamage(damage);

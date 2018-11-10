@@ -42,7 +42,7 @@ void Character::setStrength(int strength) {
 
 
 
-// gets the rolls for the attack and defense
+// gets the rolls for the attack
 int Character::attack() {
 	int roll1,roll2;
 
@@ -54,6 +54,7 @@ int Character::attack() {
 }
 
 
+// gets the rolls for defense, inflicts the damage, and returns the defense roll 
 int Character::defense(int attack) {
 	int roll1,roll2;
 	int total, totalDamage;

@@ -7,6 +7,7 @@
 class HarryPotter: public Character {
 
 private: 
+	// a bool value to ensure that harry is not resurrected twice
 	bool hasBeenRevived;
 
 public: 

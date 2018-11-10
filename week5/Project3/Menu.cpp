@@ -17,6 +17,8 @@ Menu::Menu () {
 
 }
 
+
+// allows the players to select their character types
 void Menu::selectCharacter() {
 	
 	std::cout << "=============================================================" << std::endl;
@@ -210,6 +212,7 @@ bool Menu::playAgain() {
 
 }
 
+// frees the memory used by the pointers
 Menu::~Menu() {
 
 	delete p1;

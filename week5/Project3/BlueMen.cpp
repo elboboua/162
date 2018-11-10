@@ -17,7 +17,7 @@ int BlueMen::attack() {
 	return roll1+roll2;
 }
 
-
+// This defense function takes into account the special ability of the Blue Men
 int BlueMen::defense(int damage) {
 
 	int dice;
