@@ -14,15 +14,15 @@ Character::Character(int strength, int armor, std::string type) {
 }
 
 // default constructor
-Character::Character() {
-
-	strength = 0;
-	armor = 0;
-	type = 0;
-	lastHit = "";
-
-	
-}
+//Character::Character() {
+//
+//	strength = 0;
+//	armor = 0;
+//	type = "";
+//	lastHit = 0;
+//
+//	
+//}
 
 // getters and setter
 int Character::getStrength() {
