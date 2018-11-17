@@ -19,6 +19,8 @@ private:
 	Queue* p1;
 	Queue* p2;
 	Queue* dead;
+	int p1Kills;
+	int p2Kills;
 	int rounds;
 	int numOfChar;
 
@@ -31,10 +33,14 @@ public:
 	// creates the attack for each round
 	void attackDisplay();
 
+	// display dead
+	void displayDead();
+
 	// loops what is necessary
 	void loop();
 
-	//
+	// Asks the user if they want to play
+	bool play();
 	bool playAgain();
 	
 	~Menu();

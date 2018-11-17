@@ -23,7 +23,6 @@ int Vampire::defense(int damage) {
 	int chance= rand()%2;
 
 	if (chance == 0) {
-		std::cout << "(The vampire's charm has caused him to not be attacked) ";
 		lastHit = 0;
 		return 0;	
 	} else {

@@ -17,7 +17,6 @@ void HarryPotter::takeDamage(int damage) {
 
 	if (strength <= 0 && !hasBeenRevived) {
 
-		std::cout << "(Harry has come back to life) ";
 		strength = 20;
 		hasBeenRevived = true;
 	}

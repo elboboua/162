@@ -19,7 +19,6 @@ int Medusa::attack() {
 
 	if (total == 12) {
 
-		std::cout << "(Medusa used ~glare~) ";
 		return 20;
 
 	} else {

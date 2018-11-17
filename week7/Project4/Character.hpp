@@ -14,10 +14,12 @@ class Character {
 protected:
 	// HP
 	int strength;
+	int maxStrength;
 	// adds to the defense roll of the player
 	int armor;
-	std::string type;	
 	int lastHit;
+	std::string type;	
+	std::string name;
 
 public:
 	// initialized with a specific strength and armor
@@ -27,8 +29,10 @@ public:
 	// necessary getters and setters
 	int getStrength();
 	int getArmor();
-	std::string getType();
 	int getLastHit();
+	std::string getType();
+	std::string getName();
+	void setName();
 	void setStrength(int strength);
 
 	// gets the rolls of both attack and defense
@@ -37,6 +41,9 @@ public:
 
 	// allows damage to be assigned to the character.
 	virtual void takeDamage(int damage);
+	
+	// restores a portion of health if the character wins their match
+	void restore();
 };
  
 #endif // CHARACTER_H

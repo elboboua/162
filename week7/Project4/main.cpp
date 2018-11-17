@@ -17,11 +17,7 @@ int main() {
 	Menu menu;
 
 	// loops the object
-	menu.selectCharacter();
-
-
-
-
+	menu.loop();
 
 	return 0;
 }
