@@ -70,7 +70,8 @@ void Menu::bufferSim() {
 
 		// average length	
 		len = buffer.size();
-		aveLen = (aveLen * (rounds - 1) + len) / rounds;
+		// round = i+1
+		aveLen = (aveLen * ((i+1)- 1) + len) / (i+1);
 		std::cout << "The average length is: " << aveLen << std::endl; 
 		std::cout << std::endl;
 	}

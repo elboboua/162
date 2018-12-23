@@ -1,18 +1,16 @@
 /*********************************************************************
 ** Author: Ahmad El-Bobou
-** Date: 11-22-2018 
-** Description: Lab 9 - working with STL classes 
+** Date: 12-01-2018
+** Description: Final Project - 162 Coding Game 
 *********************************************************************/
 
-#include "inputValidation.hpp"
-#include "Menu.hpp"
+#include "Game.hpp"
+#include <iostream>
 
-int main () {
+int main() {
 
-	Menu menu;
-
-	menu.loop();
-
+	Game game;
+	game.loop();
 
 	return 0;
 }

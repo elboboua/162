@@ -4,14 +4,14 @@ CXXFLAGS += -g
 
 
 SRCS = main.cpp 
-SRCS += Menu.cpp
+SRCS += FibonacciFunctions.cpp
 SRCS += inputValidation.cpp
 
 OBJS = main.o 
-OBJS += Menu.o
+OBJS += FibonacciFunctions.o
 OBJS += inputValidation.o
 
-HEADERS = Menu.hpp
+HEADERS = FibonacciFunctions.hpp
 HEADERS = inputValidation.hpp
 
 
